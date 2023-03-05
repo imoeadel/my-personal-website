@@ -126,16 +126,13 @@ export default function Home() {
             <div className="flex flex-col gap-10 py-10 lg:flex-row lg:flex-wrap">
               {projects.map((project, index) => (
                 <div className="basis-1/3 flex-1">
-                  <Link
-                    href={`/project/${project.slug}`}
-                    className="basis-1/3 flex-1"
-                    target={'_blank'}
-                  >
-                    <Image
+                  <a href={`/project/${project.slug}`}
+                    className="basis-1/3 flex-1">
+                      <Image
                       src={project.image}
                       className="rounded-lg object-cover w-full h-full cursor-pointer"
                     />
-                  </Link>
+                    </a>
                 </div>
               ))}
             </div>
