@@ -129,6 +129,7 @@ export default function Home() {
                   <Link
                     href={`/project/${project.slug}`}
                     className="basis-1/3 flex-1"
+                    target={'_blank'}
                   >
                     <Image
                       src={project.image}
@@ -148,7 +149,7 @@ export default function Home() {
                 <FaPhoneAlt className="text-5xl " />
                 <p>+201067402171</p>
               </div>
-              <div className="flex flex-col items-center justify-center gap-10 py-3 text-gray-600 dark:text-teal-500 dark:border-teal-900 dark:hover:border-teal-600 rounded-xl w-72 h-40 transition-all duration-700 ease-in-out transform hover:scale-110 rounded-3xl border-4 border-zinc-500">
+              <div className="flex flex-col items-center justify-center gap-10 py-3 text-gray-600 dark:text-teal-500 dark:border-teal-900 dark:hover:border-teal-600 w-72 h-40 transition-all duration-700 ease-in-out transform hover:scale-110 rounded-3xl border-4 border-zinc-500">
                 <AiFillMail className="text-5xl " />
                 imoedev@gmail.com
               </div>
